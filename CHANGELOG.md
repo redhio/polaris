@@ -6,6 +6,9 @@ The format is based on [these versioning and changelog guidelines][changelog-gui
 
 <!-- ## Unreleased -->
 
+## 2.0.0 - 2018-05-20
+Summary: Forked from Shopify
+
 ## 2.0.0 - 2018-05-07
 
 Summary: this is the first major version of Polaris React since launch. Included in this release are:
