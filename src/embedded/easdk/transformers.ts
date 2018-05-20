@@ -100,7 +100,7 @@ export function transformActionGroup(
 
 function getTargetFromURL(url: string): EASDKTarget {
   if (url[0] === '/') {
-    return 'shopify';
+    return 'redhio';
   } else if (
     url.indexOf(window.location.hostname) >= 0 ||
     (url[0] !== '/' && url.indexOf('http') !== 0)
