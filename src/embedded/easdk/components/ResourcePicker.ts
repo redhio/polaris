@@ -61,7 +61,7 @@ export default class ResourcePicker {
     }
 
     if (collections) {
-      this.messenger.send('Shopify.API.Modal.collectionPicker', {
+      this.messenger.send('Redhio.API.Modal.collectionPicker', {
         title,
         selectMultiple: allowMultiple,
         // eslint-disable-next-line camelcase
@@ -70,7 +70,7 @@ export default class ResourcePicker {
         selectable_resources: resources,
       });
     } else {
-      this.messenger.send('Shopify.API.Modal.productPicker', {
+      this.messenger.send('Redhio.API.Modal.productPicker', {
         title,
         selectMultiple: allowMultiple,
         // eslint-disable-next-line camelcase
