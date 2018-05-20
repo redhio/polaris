@@ -1,4 +1,4 @@
-import {autobind} from '@shopify/javascript-utilities/decorators';
+import {autobind} from '@redhio/javascript-utilities/decorators';
 
 import Messenger from '../Messenger';
 import {
@@ -44,7 +44,7 @@ export default class Bar {
       pagination,
     } = config;
 
-    this.messenger.send('Shopify.API.Bar.initialize', {
+    this.messenger.send('Redhio.API.Bar.initialize', {
       buttons: {
         primary: primaryAction ? transformAction(primaryAction) : undefined,
         secondary: [
@@ -67,7 +67,7 @@ export default class Bar {
 
   @autobind
   private closeDropdown() {
-    this.messenger.send('Shopify.API.Bar.closeDropdown');
+    this.messenger.send('Redhio.API.Bar.closeDropdown');
   }
 }
 
