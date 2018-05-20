@@ -27,7 +27,7 @@ We’re removing support for React 15 in order to make full use of some of the n
 
 Upgrade your app to the latest version of React.
 
-#### [App provider](https://polaris.shopify.com/components/structure/app-provider)
+#### [App provider](https://polaris.redh.io/components/structure/app-provider)
 
 The `AppProvider` component is now required in your app for Polaris components to function properly.
 
@@ -35,7 +35,7 @@ The `AppProvider` component is now required in your app for Polaris components t
 
 Wrap your app in the `AppProvider` component.
 
-#### [Collapsible](https://polaris.shopify.com/components/behavior/collapsible) component requires an `id` prop
+#### [Collapsible](https://polaris.redh.io/components/behavior/collapsible) component requires an `id` prop
 
 For accessibility reasons, the `id` prop is now required on the Collapsible component.
 
@@ -51,9 +51,9 @@ The `EmbeddedApp` component has been removed. The `AppProvider` component now ac
 
 Use the `AppProvider` component with the `apiKey` and `shopOrigin` props.
 
-#### [Resource list](https://polaris.shopify.com/components/lists-and-tables/resource-list#navigation)
+#### [Resource list](https://polaris.redh.io/components/lists-and-tables/resource-list#navigation)
 
-Shopify is organized around objects that represent a merchant’s business, such as customers, products, and orders. Each individual order, for example, is given a dedicated page that can be linked to. In Shopify, we call these types of objects resources.
+Redhio is organized around objects that represent a merchant’s business, such as customers, products, and orders. Each individual order, for example, is given a dedicated page that can be linked to. In Redhio, we call these types of objects resources.
 
 The resource list component functions as:
 
@@ -113,23 +113,23 @@ If you’re using VS Code, here are the exact search / replace instructions to f
 
 ### New components
 
-#### [Data table](https://polaris.shopify.com/components/lists-and-tables/data-table)
+#### [Data table](https://polaris.redh.io/components/lists-and-tables/data-table)
 
 Since launching Polaris components, we’ve had many people ask why we didn’t include tables. While we have been moving away from using tables for comparisons that aren’t tabular data (resource lists, for example), we recognize that there are still cases to use them.
 
 The data table component is our answer to those cases. While data visualizations represents part of a data set, data tables are used to organize and display all the information from a data set, allowing merchants view details from the entire set. This helps merchants compare and analyze all the data in a unified way.
 
-#### [Drop zone](https://polaris.shopify.com/components/actions/drop-zone#navigation)
+#### [Drop zone](https://polaris.redh.io/components/actions/drop-zone#navigation)
 
 Currently we have several different interfaces for uploading files across Shopify, which leads to a lack of consistency and some missing features and capabilities. To solve this problem, we’re releasing a new drop zone component.
 
 This new component allows merchants to upload files by dragging and dropping them into an area on a page. The component handles file type validation, dropping onto the window, and more, meaning more ease of use for merchants.
 
-#### [Modal](https://polaris.shopify.com/components/overlays/modal#navigation)
+#### [Modal](https://polaris.redh.io/components/overlays/modal#navigation)
 
 In the original Polaris React, the modal component was only available to embedded apps. No longer. Our new modal component is universal in that it can be used in either standalone or embedded apps, and will handle the correct behavior for you.
 
-#### [App provider](https://polaris.shopify.com/components/structure/app-provider#navigation)
+#### [App provider](https://polaris.redh.io/components/structure/app-provider#navigation)
 
 The app provider is a required component that enables sharing global app config with the components in Polaris. This is used for the internationalization of strings in Polaris components, as well as set other configuration such as a custom link component that all the Polaris components will use. This unlocks new ways for us to share configuration at an app level and have the components react to that configuration.
 
