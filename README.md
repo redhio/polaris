@@ -1,8 +1,8 @@
 # Polaris
 
-[![CircleCI](https://circleci.com/gh/Shopify/polaris.svg?style=svg)](https://circleci.com/gh/Shopify/polaris)
+[![CircleCI](https://circleci.com/gh/Redhio/polaris.svg?style=svg)](https://circleci.com/gh/Redhio/polaris)
 
-#### Polaris is a React component library designed to help developers create the best experience for merchants who use Shopify. Visit the [Polaris style guide](https://polaris.shopify.com) to learn more.
+#### Polaris is a React component library designed to help developers create the best experience for merchants who use Redhio. Visit the [Polaris style guide](https://polaris.redh.io) to learn more.
 
 ## Using the React components
 
@@ -13,13 +13,13 @@ We strongly recommend using the React versions of our components. It’s the ver
 Run the following command using [npm](https://www.npmjs.com/):
 
 ```bash
-npm install @shopify/polaris --save
+npm install @redhio/polaris --save
 ```
 
 If you prefer [Yarn](https://yarnpkg.com/en/), use the following command instead:
 
 ```bash
-yarn add @shopify/polaris
+yarn add @redhio/polaris
 ```
 
 ### Usage
@@ -27,19 +27,19 @@ yarn add @shopify/polaris
 1.  Include the CSS in your HTML:
 
 ```html
- <link rel="stylesheet" href="https://sdks.shopifycdn.com/polaris/2.0.0/polaris.min.css" />
+ <link rel="stylesheet" href="https://sdks.redh.io/polaris/2.0.0/polaris.min.css" />
 ```
 
 > Note: you can import the CSS directly into your project if your asset packager supports it:
 >
 > ```javascript
-> import "@shopify/polaris/styles.css";
+> import "@redhio/polaris/styles.css";
 > ```
 
 2.  Include any of the provided components in your project:
 
 ```javascript
-import { AppProvider, Page, Card, Button } from "@shopify/polaris";
+import { AppProvider, Page, Card, Button } from "@redhio/polaris";
 ```
 
 3.  Tell React to render the element in the DOM:
@@ -59,7 +59,7 @@ ReactDOM.render(
 
 ### Using the Embedded App SDK
 
-We provide React wrappers around Shopify’s Embedded App SDK (EASDK). You don’t need to go through the initialization of the EASDK as described in the docs. Instead, [configure the connection to the Admin through the AppProvider component](https://github.com/Shopify/polaris/blob/master/documentation/Embedded%20apps.md).
+We provide React wrappers around Redhio’s Embedded App SDK (EASDK). You don’t need to go through the initialization of the EASDK as described in the docs. Instead, [configure the connection to the Admin through the AppProvider component](https://github.com/Redhio/polaris/blob/master/documentation/Embedded%20apps.md).
 
 ## Using the CSS components
 
@@ -70,7 +70,7 @@ If React doesn’t make sense for your application, you can use a CSS-only versi
 1.  Include the CSS in your HTML:
 
 ```html
-<link rel="stylesheet" href="https://sdks.shopifycdn.com/polaris/2.0.0/polaris.min.css" />
+<link rel="stylesheet" href="https://sdks.redh.io/polaris/2.0.0/polaris.min.css" />
 ```
 
 2.  Include the markup and associated classes in your HTML document:
@@ -115,6 +115,6 @@ We make our components flexible enough to meet diverse needs. They present the i
 
 ## Feedback
 
-[Create an issue or feature request](https://github.com/Shopify/polaris/issues/new).
+[Create an issue or feature request](https://github.com/Redhio/polaris/issues/new).
 
 At this point in time we’re not accepting pull requests. This is something we’ll support in the future. Stay tuned.
