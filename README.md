@@ -83,10 +83,10 @@ If React doesn’t make sense for your application, you can use a CSS-only versi
 
 We have created example applications to document some of the ways you could include Polaris in one of your own applications. Each of these examples includes further documentation on how to install dependencies and run the app:
 
-* [create-react-app example](https://github.com/Shopify/polaris/tree/master/examples/create-react-app)
-* [Webpack example](https://github.com/Shopify/polaris/tree/master/examples/webpack)
-* [Browserify example](https://github.com/Shopify/polaris/tree/master/examples/browserify)
-* [CSS-only example](https://github.com/Shopify/polaris/tree/master/examples/cdn-styles)
+* [create-react-app example](https://github.com/Redhio/polaris/tree/master/examples/create-react-app)
+* [Webpack example](https://github.com/Redhio/polaris/tree/master/examples/webpack)
+* [Browserify example](https://github.com/Redhio/polaris/tree/master/examples/browserify)
+* [CSS-only example](https://github.com/Redhio/polaris/tree/master/examples/cdn-styles)
 
 We’ve also created a simple, hot-reloading playground for these components. You can edit the `playground/Playground.tsx` file to import the components you want to play with, and run `yarn dev` in order to start the development server.
 
