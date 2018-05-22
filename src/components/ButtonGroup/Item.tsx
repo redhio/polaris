@@ -1,6 +1,6 @@
 import * as React from 'react';
-import {autobind} from '@shopify/javascript-utilities/decorators';
-import {classNames} from '@shopify/react-utilities/styles';
+import {autobind} from '@redhio/javascript-utilities/decorators';
+import {classNames} from '@redhio/react-utilities/styles';
 import {Props as ButtonProps} from '../Button';
 import * as styles from './ButtonGroup.scss';
 

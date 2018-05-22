@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {mount} from 'enzyme';
-import {noop} from '@shopify/javascript-utilities/other';
+import {noop} from '@redhio/javascript-utilities/other';
 
 import KeypressListener from '../KeypressListener';
 import {Keys} from '../../../types';

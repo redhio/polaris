@@ -1,7 +1,7 @@
 import * as React from 'react';
-import {classNames} from '@shopify/react-utilities/styles';
-import {autobind} from '@shopify/javascript-utilities/decorators';
-import {createUniqueIDFactory, noop} from '@shopify/javascript-utilities/other';
+import {classNames} from '@redhio/react-utilities/styles';
+import {autobind} from '@redhio/javascript-utilities/decorators';
+import {createUniqueIDFactory, noop} from '@redhio/javascript-utilities/other';
 import {DisableableAction} from '../../../../types';
 import ActionList from '../../../ActionList';
 import Popover from '../../../Popover';

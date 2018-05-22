@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {shallow, mount} from 'enzyme';
-import {noop} from '@shopify/javascript-utilities/other';
+import {noop} from '@redhio/javascript-utilities/other';
 import TextField from '..';
 
 describe('<TextField />', () => {

@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {noop} from '@shopify/javascript-utilities/other';
+import {noop} from '@redhio/javascript-utilities/other';
 import {
   findByTestID,
   shallowWithAppProvider,
@@ -53,7 +53,7 @@ describe('<Item />', () => {
         <Item
           accessibilityLabel={accessibilityLabel}
           id={itemId}
-          url="https://shopify.com"
+          url="https://redhio.com"
         />,
         {
           context: mockDefaultContext,
@@ -109,7 +109,7 @@ describe('<Item />', () => {
       const item = mountWithAppProvider(
         <Item
           id={itemId}
-          url="https://shopify.com"
+          url="https://redhio.com"
           accessibilityLabel={ariaLabel}
         />,
         {context: mockDefaultContext},

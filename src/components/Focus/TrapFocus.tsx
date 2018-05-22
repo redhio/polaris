@@ -1,11 +1,11 @@
 import * as React from 'react';
-import {autobind} from '@shopify/javascript-utilities/decorators';
-import {closest} from '@shopify/javascript-utilities/dom';
+import {autobind} from '@redhio/javascript-utilities/decorators';
+import {closest} from '@redhio/javascript-utilities/dom';
 import {
   focusFirstFocusableNode,
   findFirstFocusableNode,
   focusLastFocusableNode,
-} from '@shopify/javascript-utilities/focus';
+} from '@redhio/javascript-utilities/focus';
 import {EventListener} from '../../components';
 
 import Focus from './Focus';

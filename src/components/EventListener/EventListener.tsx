@@ -2,7 +2,7 @@ import * as React from 'react';
 import {
   addEventListener,
   removeEventListener,
-} from '@shopify/javascript-utilities/events';
+} from '@redhio/javascript-utilities/events';
 
 export interface Props {
   event: string;

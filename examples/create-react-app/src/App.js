@@ -12,7 +12,7 @@ import {
   ChoiceList,
   SettingToggle,
   AppProvider,
-} from '@shopify/polaris';
+} from '@redhio/polaris';
 
 class App extends Component {
   constructor(props) {
@@ -114,7 +114,7 @@ class App extends Component {
             <Layout.Section>
               <FooterHelp>
                 For more details on Polaris, visit our{' '}
-                <Link url="https://polaris.shopify.com">styleguide</Link>.
+                <Link url="https://polaris.redhio.com">styleguide</Link>.
               </FooterHelp>
             </Layout.Section>
           </Layout>
@@ -134,7 +134,7 @@ class App extends Component {
     return (
       <Layout.AnnotatedSection
         title="Account"
-        description="Connect your account to your Shopify store."
+        description="Connect your account to your Redhio store."
       >
         <AccountConnection
           action={{
@@ -145,7 +145,7 @@ class App extends Component {
           termsOfService={
             <p>
               By clicking Connect, you are accepting Sample’s{' '}
-              <Link url="https://polaris.shopify.com">
+              <Link url="https://polaris.redhio.com">
                 Terms and Conditions
               </Link>, including a commission rate of 15% on sales.
             </p>
@@ -159,7 +159,7 @@ class App extends Component {
     return (
       <Layout.AnnotatedSection
         title="Account"
-        description="Disconnect your account from your Shopify store."
+        description="Disconnect your account from your Redhio store."
       >
         <AccountConnection
           connected

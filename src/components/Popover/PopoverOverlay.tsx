@@ -1,13 +1,13 @@
 import * as React from 'react';
-import {autobind} from '@shopify/javascript-utilities/decorators';
-import {nodeContainsDescendant} from '@shopify/javascript-utilities/dom';
-import {write} from '@shopify/javascript-utilities/fastdom';
-import {findFirstFocusableNode} from '@shopify/javascript-utilities/focus';
-import {classNames} from '@shopify/react-utilities/styles';
+import {autobind} from '@redhio/javascript-utilities/decorators';
+import {nodeContainsDescendant} from '@redhio/javascript-utilities/dom';
+import {write} from '@redhio/javascript-utilities/fastdom';
+import {findFirstFocusableNode} from '@redhio/javascript-utilities/focus';
+import {classNames} from '@redhio/react-utilities/styles';
 import {
   isElementOfType,
   wrapWithComponent,
-} from '@shopify/react-utilities/components';
+} from '@redhio/react-utilities/components';
 import {Transition} from 'react-transition-group';
 
 import {Keys} from '../../types';

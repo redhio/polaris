@@ -1,7 +1,7 @@
 import * as React from 'react';
 import isEqual from 'lodash/isEqual';
 import pick from 'lodash/pick';
-import {classNames} from '@shopify/react-utilities/styles';
+import {classNames} from '@redhio/react-utilities/styles';
 
 import {IconableAction, DisableableAction, LoadableAction} from '../../types';
 import {PaginationDescriptor} from '../Pagination';
@@ -19,7 +19,7 @@ export interface HeaderProps {
   title: string;
   /** Visually hide the title */
   titleHidden?: boolean;
-  /** App icon, for pages that are part of Shopify apps */
+  /** App icon, for pages that are part of Redhio apps */
   icon?: string;
   /** Collection of breadcrumbs */
   breadcrumbs?: BreadcrumbProps['breadcrumbs'];

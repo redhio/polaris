@@ -52,13 +52,13 @@ describe('<Tab />', () => {
   describe('url', () => {
     it('uses an anchor tag when a URL is passed', () => {
       const tab = mountWithAppProvider(
-        <Tab url="https://shopify.com" id="my-tab">
+        <Tab url="https://redhio.com" id="my-tab">
           Tab
         </Tab>,
       );
       const anchor = tab.find('a');
       expect(anchor.exists()).toBe(true);
-      expect(anchor.prop('href')).toEqual('https://shopify.com');
+      expect(anchor.prop('href')).toEqual('https://redhio.com');
     });
   });
 
@@ -87,7 +87,7 @@ describe('<Tab />', () => {
       expect(button.prop<string>('aria-label')).toBe(label);
 
       const anchor = mountWithAppProvider(
-        <Tab id="my-tab" url="https://shopify.com" accessibilityLabel={label}>
+        <Tab id="my-tab" url="https://redhio.com" accessibilityLabel={label}>
           Tab
         </Tab>,
       ).find('a');

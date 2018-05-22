@@ -1,4 +1,4 @@
-import {autobind} from '@shopify/javascript-utilities/decorators';
+import {autobind} from '@redhio/javascript-utilities/decorators';
 
 import Messenger from '../../embedded/easdk/Messenger';
 import Bar from '../../embedded/easdk/components/Bar';
@@ -8,7 +8,7 @@ import ResourcePicker from '../../embedded/easdk/components/ResourcePicker';
 export interface Options {
   /** The API key for your application from the Partner dashboard */
   apiKey: string;
-  /** The current shop’s origin, provided in the session from the Shopify API */
+  /** The current shop’s origin, provided in the session from the Redhio API */
   shopOrigin: string;
   /** Forces a redirect to the relative admin path when not rendered in an iframe */
   forceRedirect?: boolean;
@@ -51,12 +51,12 @@ export default class EASDK {
     this.messenger = new Messenger(
       window.parent,
       {
-        'Shopify.API.initialize': (data: InitData) => {
+        'Redhio.API.initialize': (data: InitData) => {
           if (data && data.User && data.User.current) {
             this.currentUser = data.User.current;
           }
         },
-        'Shopify.API.Modal.close': ({result, data}: ModalOnClose) => {
+        'Redhio.API.Modal.close': ({result, data}: ModalOnClose) => {
           this.Modal.callCloseCallback(result, data);
         },
       },
@@ -71,7 +71,7 @@ export default class EASDK {
     this.Modal = new Modal(this.messenger);
     this.ResourcePicker = new ResourcePicker(this.messenger, this.Modal);
 
-    this.messenger.send('Shopify.API.initialize', {
+    this.messenger.send('Redhio.API.initialize', {
       apiKey,
       shopOrigin,
       metadata,
@@ -82,35 +82,35 @@ export default class EASDK {
 
   @autobind
   startLoading() {
-    this.messenger.send('Shopify.API.Bar.loading.on');
+    this.messenger.send('Redhio.API.Bar.loading.on');
   }
 
   @autobind
   stopLoading() {
-    this.messenger.send('Shopify.API.Bar.loading.off');
+    this.messenger.send('Redhio.API.Bar.loading.off');
   }
 
   @autobind
   showFlashNotice(message: string, options: {error?: boolean} = {}) {
     const {error = false} = options;
-    const type = error ? 'Shopify.API.flash.error' : 'Shopify.API.flash.notice';
+    const type = error ? 'Redhio.API.flash.error' : 'Redhio.API.flash.notice';
     this.messenger.send(type, {message});
   }
 
   @autobind
   pushState(location: string) {
-    this.messenger.send('Shopify.API.pushState', {location});
+    this.messenger.send('Redhio.API.pushState', {location});
   }
 
   @autobind
   redirect(location: string) {
-    this.messenger.send('Shopify.API.redirect', {location});
+    this.messenger.send('Redhio.API.redirect', {location});
   }
 }
 
 function checkFrameRedirect(
   apiKey: Options['apiKey'],
-  shopOrigin: Options['shopOrigin'] = 'https://myshopify.com',
+  shopOrigin: Options['shopOrigin'] = 'https://myredhio.com',
   forceRedirect: Options['forceRedirect'],
 ) {
   if (window !== window.parent) {

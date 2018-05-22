@@ -14,7 +14,7 @@ describe('<UnstyledLink />', () => {
       const link = new Link(CustomLinkComponent);
       const mockContext = {context: {polaris: {link}}};
       const anchorElement = mountWithAppProvider(
-        <UnstyledLink external url="https://shopify.com" />,
+        <UnstyledLink external url="https://redhio.com" />,
         mockContext,
       ).find(CustomLinkComponent);
 
@@ -25,7 +25,7 @@ describe('<UnstyledLink />', () => {
   describe('external', () => {
     it('adds the correct attributes', () => {
       const anchorElement = shallowWithAppProvider(
-        <UnstyledLink external url="https://shopify.com" />,
+        <UnstyledLink external url="https://redhio.com" />,
       ).find('a');
       expect(anchorElement.prop('target')).toBe('_blank');
       expect(anchorElement.prop('rel')).toBe('noopener noreferrer');

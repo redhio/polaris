@@ -1,7 +1,7 @@
 import * as React from 'react';
-import {autobind} from '@shopify/javascript-utilities/decorators';
-import {noop, createUniqueIDFactory} from '@shopify/javascript-utilities/other';
-import {findFirstFocusableNode} from '@shopify/javascript-utilities/focus';
+import {autobind} from '@redhio/javascript-utilities/decorators';
+import {noop, createUniqueIDFactory} from '@redhio/javascript-utilities/other';
+import {findFirstFocusableNode} from '@redhio/javascript-utilities/focus';
 
 import {PreferredPosition} from '../PositionedOverlay';
 import Portal from '../Portal';

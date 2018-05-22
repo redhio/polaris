@@ -1,6 +1,6 @@
 import * as React from 'react';
-import {getRectForNode} from '@shopify/javascript-utilities/geometry';
-import {autobind} from '@shopify/javascript-utilities/decorators';
+import {getRectForNode} from '@redhio/javascript-utilities/geometry';
+import {autobind} from '@redhio/javascript-utilities/decorators';
 import {polarisAppProviderContextTypes} from '../AppProvider/types';
 
 export interface State {

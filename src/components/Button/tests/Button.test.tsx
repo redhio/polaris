@@ -120,7 +120,7 @@ describe('<Button />', () => {
     it('is passed down to an underlying link button', () => {
       const id = 'MyID';
       const button = shallow(
-        <Button url="https://shopify.com" id={id}>
+        <Button url="https://redhio.com" id={id}>
           Button
         </Button>,
       );

@@ -1,9 +1,9 @@
 import * as React from 'react';
-import {classNames, variationName} from '@shopify/react-utilities/styles';
+import {classNames, variationName} from '@redhio/react-utilities/styles';
 import {
   elementChildren,
   wrapWithComponent,
-} from '@shopify/react-utilities/components';
+} from '@redhio/react-utilities/components';
 
 import * as styles from './Stack.scss';
 import Item, {Props as ItemProps} from './Item';

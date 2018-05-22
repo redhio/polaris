@@ -1,12 +1,12 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
 import capitalize from 'lodash/capitalize';
-import {classNames} from '@shopify/react-utilities/styles';
-import {autobind, debounce} from '@shopify/javascript-utilities/decorators';
+import {classNames} from '@redhio/react-utilities/styles';
+import {autobind, debounce} from '@redhio/javascript-utilities/decorators';
 import {
   addEventListener,
   removeEventListener,
-} from '@shopify/javascript-utilities/events';
+} from '@redhio/javascript-utilities/events';
 
 import Icon from '../Icon';
 import Stack from '../Stack';

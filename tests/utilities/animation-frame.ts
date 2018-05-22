@@ -1,4 +1,4 @@
-import {autobind} from '@shopify/javascript-utilities/decorators';
+import {autobind} from '@redhio/javascript-utilities/decorators';
 
 interface FrameCallback {
   (time: number): any,

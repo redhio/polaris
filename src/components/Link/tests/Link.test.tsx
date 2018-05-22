@@ -34,7 +34,7 @@ describe('<Link />', () => {
     it('is passed down to an underlying UnstyledLink', () => {
       const id = 'MyID';
       const link = mountWithAppProvider(
-        <Link url="https://shopify.com" id={id} />,
+        <Link url="https://redhio.com" id={id} />,
       );
       expect(link.find(UnstyledLink).prop('id')).toBe(id);
     });

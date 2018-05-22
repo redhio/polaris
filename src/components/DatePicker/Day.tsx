@@ -1,8 +1,8 @@
 import * as React from 'react';
-import {classNames} from '@shopify/react-utilities/styles';
-import {noop} from '@shopify/javascript-utilities/other';
-import {autobind} from '@shopify/javascript-utilities/decorators';
-import {Months, isSameDay} from '@shopify/javascript-utilities/dates';
+import {classNames} from '@redhio/react-utilities/styles';
+import {noop} from '@redhio/javascript-utilities/other';
+import {autobind} from '@redhio/javascript-utilities/decorators';
+import {Months, isSameDay} from '@redhio/javascript-utilities/dates';
 
 import * as styles from './DatePicker.scss';
 

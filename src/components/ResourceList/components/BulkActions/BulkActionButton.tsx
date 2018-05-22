@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {findDOMNode} from 'react-dom';
-import {classNames} from '@shopify/react-utilities';
+import {classNames} from '@redhio/react-utilities';
 
 import Icon from '../../../Icon';
 import UnstyledLink from '../../../UnstyledLink';

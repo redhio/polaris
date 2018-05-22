@@ -1,7 +1,7 @@
 const path = require('path');
 const webpack = require('webpack');
-const {svgOptions: svgOptimizationOptions} = require('@shopify/images/optimize');
-const postcssShopify = require('postcss-shopify');
+const {svgOptions: svgOptimizationOptions} = require('@redhio/images/optimize');
+const postcssRedhio = require('postcss-redhio');
 
 const ICON_PATH_REGEX = /icons\//;
 const IMAGE_PATH_REGEX = /\.(jpe?g|png|gif|svg)$/;
@@ -11,7 +11,7 @@ module.exports = {
   devtool: 'eval',
   entry: [
     'react-hot-loader/patch',
-    '@shopify/polaris/styles/global.scss',
+    '@redhio/polaris/styles/global.scss',
     path.join(__dirname, 'index.tsx'),
   ],
   output: {
@@ -22,7 +22,7 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.json'],
     alias: {
-      '@shopify/polaris': path.resolve(__dirname, '..', 'src'),
+      '@redhio/polaris': path.resolve(__dirname, '..', 'src'),
     },
   },
   plugins: [
@@ -38,7 +38,7 @@ module.exports = {
         },
         use: [
           {
-            loader: '@shopify/images/icon-loader',
+            loader: '@redhio/images/icon-loader',
           },
           {
             loader: 'image-webpack-loader',
@@ -75,8 +75,8 @@ module.exports = {
               babelOptions: {
                 babelrc: false,
                 presets: [
-                  ['shopify/web', {modules: false}],
-                  ['shopify/react', {hot: true}],
+                  ['redhio/web', {modules: false}],
+                  ['redhio/react', {hot: true}],
                 ],
               },
             },
@@ -101,7 +101,7 @@ module.exports = {
           {
             loader: 'postcss-loader',
             options: {
-              plugins: () => postcssShopify(),
+              plugins: () => postcssRedhio(),
               sourceMap: false,
             },
           },

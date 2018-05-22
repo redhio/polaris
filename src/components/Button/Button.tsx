@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {classNames, variationName} from '@shopify/react-utilities';
+import {classNames, variationName} from '@redhio/react-utilities';
 
 import {ComplexAction} from '../../types';
 import {handleMouseUpByBlurring} from '../../utilities/focus';

@@ -10,7 +10,7 @@ import cssModulesLocalByDefault from 'postcss-modules-local-by-default';
 import cssModulesScope from 'postcss-modules-scope';
 import cssModulesValues from 'postcss-modules-values';
 import Parser from 'postcss-modules-parser';
-import postcssShopify from 'postcss-shopify';
+import postcssRedhio from 'postcss-redhio';
 import genericNames from 'generic-names';
 
 export default function styles(options = {}) {
@@ -47,11 +47,11 @@ export default function styles(options = {}) {
         return getPostCSSOutput(processor, source, toPath);
       },
     }),
-    postcssShopify(),
+    postcssRedhio(),
   ]);
 
   return {
-    name: 'shopify-styles',
+    name: 'redhio-styles',
 
     transform(source, id) {
       if (!filter(id)) { return null; }

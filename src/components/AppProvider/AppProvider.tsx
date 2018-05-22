@@ -16,7 +16,7 @@ export interface Props {
   linkComponent?: LinkLikeComponent;
   /** The API key for your application from the Partner dashboard */
   apiKey?: string;
-  /** The current shop’s origin, provided in the session from the Shopify API */
+  /** The current shop’s origin, provided in the session from the Redhio API */
   shopOrigin?: string;
   /** Forces a redirect to the relative admin path when not rendered in an iframe */
   forceRedirect?: boolean;

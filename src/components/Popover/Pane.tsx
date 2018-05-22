@@ -1,6 +1,6 @@
 import * as React from 'react';
-import {classNames} from '@shopify/react-utilities/styles';
-import {wrapWithComponent} from '@shopify/react-utilities/components';
+import {classNames} from '@redhio/react-utilities/styles';
+import {wrapWithComponent} from '@redhio/react-utilities/components';
 
 import Scrollable from '../Scrollable';
 

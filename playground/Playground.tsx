@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 import * as React from 'react';
-import {Page, AppProvider} from '@shopify/polaris';
+import {Page, AppProvider} from '@redhio/polaris';
 
 interface State {}
 

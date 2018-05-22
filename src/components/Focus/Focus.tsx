@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
-import {focusFirstFocusableNode} from '@shopify/javascript-utilities/focus';
-import {write} from '@shopify/javascript-utilities/fastdom';
+import {focusFirstFocusableNode} from '@redhio/javascript-utilities/focus';
+import {write} from '@redhio/javascript-utilities/fastdom';
 
 export interface Props {
   children?: React.ReactNode;

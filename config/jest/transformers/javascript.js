@@ -2,8 +2,8 @@ const {createTransformer} = require('babel-jest');
 
 const babelOptions = {
   presets: [
-    ['shopify/node', {modules: 'commonjs'}],
-    'shopify/react',
+    ['redhio/node', {modules: 'commonjs'}],
+    'redhio/react',
   ],
 };
 

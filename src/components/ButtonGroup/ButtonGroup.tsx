@@ -1,6 +1,6 @@
 import * as React from 'react';
-import {classNames} from '@shopify/react-utilities/styles';
-import {elementChildren} from '@shopify/react-utilities/components';
+import {classNames} from '@redhio/react-utilities/styles';
+import {elementChildren} from '@redhio/react-utilities/components';
 import Item from './Item';
 import * as styles from './ButtonGroup.scss';
 

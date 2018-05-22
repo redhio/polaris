@@ -1,7 +1,7 @@
 module.exports = {
   extends: [
-    'plugin:shopify/esnext',
-    'plugin:shopify/node',
+    'plugin:redhio/esnext',
+    'plugin:redhio/node',
   ],
   env: {
     jest: true,

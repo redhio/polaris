@@ -14,7 +14,7 @@ export default function image(options = {}) {
   const filter = createFilter(options.include, options.exclude);
 
   return {
-    name: 'shopify-image',
+    name: 'redhio-image',
 
     load(id) {
       if (!filter(id)) { return null; }

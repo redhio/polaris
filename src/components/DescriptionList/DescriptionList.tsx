@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {createUniqueIDFactory} from '@shopify/javascript-utilities/other';
+import {createUniqueIDFactory} from '@redhio/javascript-utilities/other';
 import * as styles from './DescriptionList.scss';
 
 export interface Item {

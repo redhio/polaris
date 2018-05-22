@@ -1,10 +1,10 @@
-import {autobind} from '@shopify/javascript-utilities/decorators';
-import {getRectForNode} from '@shopify/javascript-utilities/geometry';
+import {autobind} from '@redhio/javascript-utilities/decorators';
+import {getRectForNode} from '@redhio/javascript-utilities/geometry';
 import throttle from 'lodash-decorators/throttle';
 import {
   addEventListener,
   removeEventListener,
-} from '@shopify/javascript-utilities/events';
+} from '@redhio/javascript-utilities/events';
 
 export interface StickyItem {
   stickyNode: HTMLElement;

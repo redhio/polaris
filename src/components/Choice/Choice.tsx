@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {classNames} from '@shopify/react-utilities/styles';
+import {classNames} from '@redhio/react-utilities/styles';
 import {Error} from '../../types';
 import Icon from '../Icon';
 import * as styles from './Choice.scss';

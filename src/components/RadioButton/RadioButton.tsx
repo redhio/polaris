@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {createUniqueIDFactory} from '@shopify/javascript-utilities/other';
+import {createUniqueIDFactory} from '@redhio/javascript-utilities/other';
 import Choice, {helpTextID} from '../Choice';
 import * as styles from './RadioButton.scss';
 

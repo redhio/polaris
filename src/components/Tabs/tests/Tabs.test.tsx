@@ -60,7 +60,7 @@ describe('<Tabs />', () => {
 
     it('sets the tab URL if passed in the tab descriptor', () => {
       const urlTabs = [
-        {...tabs[0], url: 'https://shopify.com'},
+        {...tabs[0], url: 'https://redhio.com'},
         {...tabs[1], url: 'https://google.com'},
       ];
       const wrapper = mountWithAppProvider(

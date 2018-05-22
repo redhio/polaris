@@ -2,7 +2,7 @@ import {extname} from 'path';
 import {createFilter} from 'rollup-pluginutils';
 import SVGO from 'svgo';
 
-import {svgOptions} from '@shopify/images/optimize';
+import {svgOptions} from '@redhio/images/optimize';
 
 const VIEWBOX_REGEX = /viewBox="([^"]*)"/;
 const SVG_REGEX = /(<svg[^>]*>|<\/svg>)/g;
@@ -14,7 +14,7 @@ export default function icon(options = {}) {
   const filter = createFilter(options.include, options.exclude);
 
   return {
-    name: 'shopify-icon',
+    name: 'redhio-icon',
 
     transform(source, id) {
       if (extname(id) !== '.svg') { return null; }

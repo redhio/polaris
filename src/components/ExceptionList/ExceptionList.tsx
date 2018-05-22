@@ -1,5 +1,5 @@
 import React, {Fragment} from 'react';
-import {classNames, variationName} from '@shopify/react-utilities/styles';
+import {classNames, variationName} from '@redhio/react-utilities/styles';
 
 import Icon from '../Icon';
 import Truncate from '../Truncate';

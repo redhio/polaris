@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {noop} from '@shopify/javascript-utilities/other';
+import {noop} from '@redhio/javascript-utilities/other';
 import {trigger, mountWithAppProvider} from '../../../../../../tests/utilities';
 
 import FilterControl, {Props} from '../';

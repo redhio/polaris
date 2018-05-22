@@ -1,9 +1,9 @@
 import * as React from 'react';
-import {autobind} from '@shopify/javascript-utilities/decorators';
+import {autobind} from '@redhio/javascript-utilities/decorators';
 import {
   addEventListener,
   removeEventListener,
-} from '@shopify/javascript-utilities/events';
+} from '@redhio/javascript-utilities/events';
 import {Keys} from '../../types';
 
 export interface Props {

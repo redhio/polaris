@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {autobind} from '@shopify/javascript-utilities/decorators';
+import {autobind} from '@redhio/javascript-utilities/decorators';
 
 import {Button, Popover, Select, FormLayout} from '../../../';
 import Form from '../../../Form';

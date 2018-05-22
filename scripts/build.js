@@ -60,8 +60,8 @@ copy(['./src/**/*.{scss,svg,png,jpg,jpeg,json}', intermediateBuild], {up: 1})
     writeFileSync(resolvePath(intermediateBuild, '.babelrc'), `
       {
         "presets": [
-          "shopify/react",
-          ["shopify/web", {"modules": false}]
+          "redhio/react",
+          ["redhio/web", {"modules": false}]
         ],
         "plugins": [
           "../config/babel/plugins/sass-namespace-to-default-import.js"
@@ -109,7 +109,7 @@ copy(['./src/**/*.{scss,svg,png,jpg,jpeg,json}', intermediateBuild], {up: 1})
     writeFileSync(resolvePath(intermediateBuild, '.babelrc'), `
       {
         "presets": [
-          "shopify/react"
+          "redhio/react"
         ],
         "plugins": [
           "../config/babel/plugins/sass-namespace-to-default-import.js"
@@ -133,8 +133,8 @@ copy(['./src/**/*.{scss,svg,png,jpg,jpeg,json}', intermediateBuild], {up: 1})
     writeFileSync(resolvePath(intermediateBuild, '.babelrc'), `
       {
         "presets": [
-          "shopify/react",
-          ["shopify/node", {"version": 6, "modules": false}]
+          "redhio/react",
+          ["redhio/node", {"version": 6, "modules": false}]
         ],
         "plugins": [
           "../config/babel/plugins/sass-namespace-to-default-import.js"

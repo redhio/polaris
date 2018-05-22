@@ -1,6 +1,6 @@
 import * as React from 'react';
-import {SVGSource} from '@shopify/images';
-import {classNames, variationName} from '@shopify/react-utilities/styles';
+import {SVGSource} from '@redhio/images';
+import {classNames, variationName} from '@redhio/react-utilities/styles';
 
 import {
   add,

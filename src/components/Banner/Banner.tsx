@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {classNames, variationName} from '@shopify/react-utilities/styles';
+import {classNames, variationName} from '@redhio/react-utilities/styles';
 
 import {Action, DisableableAction, LoadableAction} from '../../types';
 import Button, {buttonFrom} from '../Button';

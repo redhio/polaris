@@ -1,8 +1,8 @@
 import * as React from 'react';
 import {findDOMNode} from 'react-dom';
-import {noop} from '@shopify/javascript-utilities/other';
-import {classNames} from '@shopify/react-utilities/styles';
-import {autobind} from '@shopify/javascript-utilities/decorators';
+import {noop} from '@redhio/javascript-utilities/other';
+import {classNames} from '@redhio/react-utilities/styles';
+import {autobind} from '@redhio/javascript-utilities/decorators';
 
 import EventListener from '../EventListener';
 

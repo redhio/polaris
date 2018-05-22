@@ -1,6 +1,6 @@
 import * as React from 'react';
-import {noop} from '@shopify/javascript-utilities/other';
-import {autobind} from '@shopify/javascript-utilities/decorators';
+import {noop} from '@redhio/javascript-utilities/other';
+import {autobind} from '@redhio/javascript-utilities/decorators';
 import {
   Range,
   Months,
@@ -11,7 +11,7 @@ import {
   getNextDisplayMonth,
   getPreviousDisplayYear,
   getPreviousDisplayMonth,
-} from '@shopify/javascript-utilities/dates';
+} from '@redhio/javascript-utilities/dates';
 
 import Button from '../Button';
 

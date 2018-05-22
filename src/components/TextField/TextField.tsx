@@ -1,7 +1,7 @@
 import * as React from 'react';
-import {autobind} from '@shopify/javascript-utilities/decorators';
-import {createUniqueIDFactory} from '@shopify/javascript-utilities/other';
-import {classNames} from '@shopify/react-utilities/styles';
+import {autobind} from '@redhio/javascript-utilities/decorators';
+import {createUniqueIDFactory} from '@redhio/javascript-utilities/other';
+import {classNames} from '@redhio/react-utilities/styles';
 
 import Labelled, {Action, helpTextID, errorID, labelID} from '../Labelled';
 import Connected from '../Connected';

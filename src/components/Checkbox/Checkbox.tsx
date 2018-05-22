@@ -1,6 +1,6 @@
 import * as React from 'react';
-import {classNames} from '@shopify/react-utilities/styles';
-import {createUniqueIDFactory} from '@shopify/javascript-utilities/other';
+import {classNames} from '@redhio/react-utilities/styles';
+import {createUniqueIDFactory} from '@redhio/javascript-utilities/other';
 
 import {
   withAppProvider,

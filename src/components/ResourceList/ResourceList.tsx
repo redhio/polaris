@@ -1,8 +1,8 @@
 import * as React from 'react';
 
-import {autobind, debounce} from '@shopify/javascript-utilities/decorators';
-import {classNames} from '@shopify/react-utilities/styles';
-import {createUniqueIDFactory} from '@shopify/javascript-utilities/other';
+import {autobind, debounce} from '@redhio/javascript-utilities/decorators';
+import {classNames} from '@redhio/react-utilities/styles';
+import {createUniqueIDFactory} from '@redhio/javascript-utilities/other';
 import {Button, EventListener, Sticky} from '../';
 import Select, {Option} from '../Select';
 import EmptySearchResult from '../EmptySearchResult';

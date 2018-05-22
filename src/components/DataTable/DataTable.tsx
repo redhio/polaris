@@ -1,6 +1,6 @@
 import * as React from 'react';
-import {autobind, debounce} from '@shopify/javascript-utilities/decorators';
-import {classNames} from '@shopify/react-utilities/styles';
+import {autobind, debounce} from '@redhio/javascript-utilities/decorators';
+import {classNames} from '@redhio/react-utilities/styles';
 
 import {
   withAppProvider,

@@ -1,4 +1,4 @@
-import {clamp} from '@shopify/javascript-utilities/math';
+import {clamp} from '@redhio/javascript-utilities/math';
 import {RGBColor, RGBAColor, HSBColor, HSBAColor} from './types';
 
 export function rgbString(color: RGBColor | RGBAColor) {

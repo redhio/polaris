@@ -1,13 +1,13 @@
 import * as React from 'react';
 import {mount} from 'enzyme';
-import {noop} from '@shopify/javascript-utilities/other';
+import {noop} from '@redhio/javascript-utilities/other';
 import Form from '../Form';
 
 const name = 'form-name';
 const noValidate = true;
 
 const acceptCharset = 'UTF-8';
-const action = 'shopifyapi.com';
+const action = 'redhioapi.com';
 const encType = 'text/plain';
 const method = 'get';
 const target = '_blank';

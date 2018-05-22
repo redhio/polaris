@@ -2,8 +2,8 @@ const path = require('path');
 const webpack = require('webpack');
 const {
   svgOptions: svgOptimizationOptions,
-} = require('@shopify/images/optimize');
-const postcssShopify = require('postcss-shopify');
+} = require('@redhio/images/optimize');
+const postcssRedhio = require('postcss-redhio');
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer')
   .BundleAnalyzerPlugin;
 
@@ -14,7 +14,7 @@ module.exports = {
   target: 'web',
   devtool: 'eval',
   entry: [
-    '@shopify/polaris/styles/global.scss',
+    '@redhio/polaris/styles/global.scss',
     path.join(__dirname, 'index.tsx'),
   ],
   output: {
@@ -24,7 +24,7 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.json'],
     alias: {
-      '@shopify/polaris': path.resolve(__dirname, '..', 'src'),
+      '@redhio/polaris': path.resolve(__dirname, '..', 'src'),
     },
   },
   plugins: [
@@ -53,7 +53,7 @@ module.exports = {
         },
         use: [
           {
-            loader: '@shopify/images/icon-loader',
+            loader: '@redhio/images/icon-loader',
           },
           {
             loader: 'image-webpack-loader',
@@ -94,8 +94,8 @@ module.exports = {
               babelOptions: {
                 babelrc: false,
                 presets: [
-                  ['shopify/web', {modules: false}],
-                  ['shopify/react', {hot: true}],
+                  ['redhio/web', {modules: false}],
+                  ['redhio/react', {hot: true}],
                 ],
               },
             },
@@ -120,7 +120,7 @@ module.exports = {
           {
             loader: 'postcss-loader',
             options: {
-              plugins: () => postcssShopify(),
+              plugins: () => postcssRedhio(),
               sourceMap: false,
             },
           },

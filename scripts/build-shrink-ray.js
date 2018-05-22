@@ -12,7 +12,7 @@ const pullRequestID = pullRequestURL
   ? pullRequestURL[pullRequestURL.length - 1]
   : undefined;
 
-const postWebpackReportURL = `https://shrink-ray.shopifycloud.com/repos/${repo}/commits/${sha}/reports`;
+const postWebpackReportURL = `https://shrink-ray.redhiocloud.com/repos/${repo}/commits/${sha}/reports`;
 
 const build = resolve(__dirname, '..', 'shrink-ray-build/build');
 const report = resolve(build, 'bundle-analysis', 'report.html');
@@ -72,7 +72,7 @@ function setupShrinkRay() {
 
 function sendCommitStatus(state) {
   // prettier-ignore
-  const statusUrl = `https://shrink-ray.shopifycloud.com/repos/${repo}/commits/${sha}/status/${state}`;
+  const statusUrl = `https://shrink-ray.redhiocloud.com/repos/${repo}/commits/${sha}/status/${state}`;
   console.log(`[shrink-ray] POST ${statusUrl}`);
   return fetch(statusUrl, {method: 'POST'});
 }

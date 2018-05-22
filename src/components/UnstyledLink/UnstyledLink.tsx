@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {ReactComponent} from '@shopify/react-utilities/types';
+import {ReactComponent} from '@redhio/react-utilities/types';
 import {unstyled} from '../shared';
 import {withAppProvider, WithAppProviderProps} from '../AppProvider';
 

@@ -2,7 +2,7 @@ import * as React from 'react';
 import {
   wrapWithComponent,
   isElementOfType,
-} from '@shopify/react-utilities/components';
+} from '@redhio/react-utilities/components';
 
 import Group from './Group';
 import Item, {Props as ItemProps} from './Item';

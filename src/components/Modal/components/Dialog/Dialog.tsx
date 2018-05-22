@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {classNames} from '@shopify/react-utilities/styles';
+import {classNames} from '@redhio/react-utilities/styles';
 import {Transition, CSSTransition} from 'react-transition-group';
 import {KeypressListener} from '../../../../components';
 import memoizedBind from '../../../../utilities/memoized-bind';

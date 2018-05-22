@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {render} from 'react-dom';
-import * as Polaris from '@shopify/polaris';
+import * as Polaris from '@redhio/polaris';
 
 function renderPlayground() {
   render(

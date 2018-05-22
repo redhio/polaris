@@ -1,4 +1,4 @@
-import {noop} from '@shopify/javascript-utilities/other';
+import {noop} from '@redhio/javascript-utilities/other';
 
 const Breakpoints = {
   navBarCollapsed: '769px',

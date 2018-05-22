@@ -1,10 +1,10 @@
 import * as React from 'react';
 import * as PropTypes from 'prop-types';
-import {focusFirstFocusableNode} from '@shopify/javascript-utilities/focus';
-import {write} from '@shopify/javascript-utilities/fastdom';
-import {wrapWithComponent} from '@shopify/react-utilities/components';
-import {autobind} from '@shopify/javascript-utilities/decorators';
-import {createUniqueIDFactory} from '@shopify/javascript-utilities/other';
+import {focusFirstFocusableNode} from '@redhio/javascript-utilities/focus';
+import {write} from '@redhio/javascript-utilities/fastdom';
+import {wrapWithComponent} from '@redhio/react-utilities/components';
+import {autobind} from '@redhio/javascript-utilities/decorators';
+import {createUniqueIDFactory} from '@redhio/javascript-utilities/other';
 import {TransitionGroup} from 'react-transition-group';
 import {ComplexAction} from '../../types';
 import {

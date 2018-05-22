@@ -1,7 +1,7 @@
 import * as React from 'react';
-import {autobind} from '@shopify/javascript-utilities/decorators';
-import {getRectForNode, Rect} from '@shopify/javascript-utilities/geometry';
-import {closest} from '@shopify/javascript-utilities/dom';
+import {autobind} from '@redhio/javascript-utilities/decorators';
+import {getRectForNode, Rect} from '@redhio/javascript-utilities/geometry';
+import {closest} from '@redhio/javascript-utilities/dom';
 
 import EventListener from '../EventListener';
 import Scrollable from '../Scrollable';

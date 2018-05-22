@@ -21,7 +21,7 @@ describe('<Item />', () => {
   });
 
   it('passes the external prop down to the link', () => {
-    const item = shallow(<Item external url="https://www.shopify.com" />);
+    const item = shallow(<Item external url="https://www.redhio.com" />);
     expect(item.find(UnstyledLink).prop('external')).toBe(true);
   });
 });

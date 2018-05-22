@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {createPortal} from 'react-dom';
-import {createUniqueIDFactory} from '@shopify/javascript-utilities/other';
-import {isServer} from '@shopify/react-utilities/target';
+import {createUniqueIDFactory} from '@redhio/javascript-utilities/other';
+import {isServer} from '@redhio/react-utilities/target';
 
 export interface Props {
   children?: React.ReactNode;

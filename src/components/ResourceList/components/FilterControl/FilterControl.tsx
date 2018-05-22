@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {autobind, memoize} from '@shopify/javascript-utilities/decorators';
+import {autobind, memoize} from '@redhio/javascript-utilities/decorators';
 import {withAppProvider, WithAppProviderProps} from '../../../AppProvider';
 import {contextTypes} from '../../types';
 import {ComplexAction} from '../../../../types';

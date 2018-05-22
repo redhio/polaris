@@ -1,4 +1,4 @@
-import {Rect} from '@shopify/javascript-utilities/geometry';
+import {Rect} from '@redhio/javascript-utilities/geometry';
 
 export type PreferredPosition = 'above' | 'below' | 'mostSpace';
 

@@ -4,7 +4,7 @@ const {paramCase} = require('change-case');
 const {resolve: resolvePath, basename, dirname} = require('path');
 const {readFileSync, writeFileSync, removeSync} = require('fs-extra');
 
-const {svgOptions} = require('@shopify/images/optimize');
+const {svgOptions} = require('@redhio/images/optimize');
 
 const svgo = new SVGO(svgOptions());
 
